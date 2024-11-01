@@ -212,14 +212,14 @@
     <section id="contact">
         <h3>Contact Us</h3>
         <form action="http://wp.zybooks.com/form-viewer.php" method="POST">
-            <label for="firstName">First Name (Enter first name)</label>
-            <input type="text" id="firstName" autocomplete="given-name" maxlength="20" required aria-required="true">
+            <label for="firstName">First Name<span class="required">*</span></label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter first name" autocomplete="given-name" maxlength="20" required aria-required="true">
 
-            <label for="lastName">Last Name (Enter last name)</label>
-            <input type="text" id="lastName" autocomplete="family-name" maxlength="20" required aria-required="true">
+            <label for="lastName">Last Name<span class="required">*</span></label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter last name" autocomplete="family-name" maxlength="20" required aria-required="true">
 
             <fieldset>
-                <legend>Contact Method</legend>
+                <legend>Contact Method<span class="required">*</span></legend>
 
                 <input type="radio" id="emailPref" name="contactMethod" value="contactMethod" checked required aria-required="true">
                 <label for="emailPref">E-mail</label>
@@ -231,13 +231,13 @@
                 <label for="phonePref">Phone</label>
             </fieldset>
 
-            <label for="email">Email Address (Enter Email)</label>
-            <input type="email" id="email" autocomplete="email" required aria-required="true">
+            <label for="email">Email Address<span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" autocomplete="email" required aria-required="true">
             
-            <label for="phone">Phone Number (Enter telephone number)</label>
-            <input type="tel" id="phone" autocomplete="tel" required aria-required="true">
+            <label for="phone">Phone Number<span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter telephone number" autocomplete="tel" required aria-required="true">
             
-            <label for="destination">Destination</label>
+            <label for="destination">Destination<span class="required">*</span></label>
             <select id="destination" name="destination">
                 <option>Barcelona</option>
                 <option>Granada</option>
@@ -249,7 +249,7 @@
                 <option>Valencia</option>
             </select>
             
-            <label for="travelTime">Travel Time</label>
+            <label for="travelTime">Travel Time<span class="required">*</span></label>
             <select id="travelTime" name="travelTime">
                 <option>Fall</option>
                 <option>Winter</option>
