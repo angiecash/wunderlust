@@ -40,7 +40,14 @@
          See the image of the correct outline as a reference if you have questions.
         Also review the alt text on all of the images to ensure that it is descriptive and appropriate-->
         <header>
-            <img src="images/logo-M.png" alt="The Wunderlust logo shows blue waves and the outline of two palm trees against an orange sun">
+
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/logo-L.png">
+                <source media="(min-width: 780px)" srcset="images/logo-M.png">
+                <source media="(min-width: 320px)" srcset="images/logo-S.png">
+                <img src="images/logo-S.png" alt="The Wunderlust logo shows blue waves and the outline of two palm trees against an orange sun">
+            </picture>
+       
             <h1>Wunderlust Travel</h1>
             <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
             <nav>
@@ -57,9 +64,27 @@
             <article>  
                 <h2>Majorca</h2>
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-                <img src="images/majorca-waves.png" alt="Turquoise blue waters with white wave caps crashing against a rock cliff">
-                <img src="images/majorca-beach.png" alt="beach">
-                <img src="images/majorca-cove.png" alt="Deep blue water leading to the horizon with the island and trees in the foreground">
+                
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/majorca-waves-L.png">
+                    <source media="(min-width: 780px)" srcset="images/majorca-waves-M.png">
+                    <source media="(min-width: 320px)" srcset="images/majorca-waves-S.png">
+                    <img src="images/majorca-waves-S.png" alt="Waves of the Mediterranean Sea against rocks">
+                </picture>
+                
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/majorca-beach-L.png">
+                    <source media="(min-width: 780px)" srcset="images/majorca-beach-M.png">
+                    <source media="(min-width: 320px)" srcset="images/majorca-beach-S.png">
+                    <img src="images/majorca-beach-S.png" alt="A beach in Majorca with clear blue water">
+                </picture>
+                
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/majorca-cove-L.png">
+                    <source media="(min-width: 780px)" srcset="images/majorca-cove-M.png">
+                    <source media="(min-width: 320px)" srcset="images/majorca-cove-S.png">
+                    <img src="images/majorca-cove-S.png" alt="A cove in Majorca with trees, rocks, houses and clear blue water">
+                </picture>
                 <section>
                     <h3>Plan Your Trip</h3>
                     <section>
@@ -93,31 +118,52 @@
                 </section>
                 <section>
                     <h3>Testimonials</h3>
+
                     <section>
-                        <img src="images/mirando-blake.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses">
-                        <h4>Amanda Blake</h4>
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="images/miranda-blake-L.png">
+                            <source media="(min-width: 780px)" srcset="images/miranda-blake-M.png">
+                            <source media="(min-width: 320px)" srcset="images/miranda-blake-S.png">
+                            <img src="images/miranda-blake-M.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses">
+                        </picture>
+                        <h4>Miranda Blake</h4>
                         <p>Traveling From: London, England</p>
                         <q>I traveled here for business, but my stay was extended. Now it is my home.</q>
                     </section>
+
                     <section>
-                        <img src="images/max-winter.png" alt="Max Winter">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="images/max-winter-L.png">
+                            <source media="(min-width: 780px)" srcset="images/max-winter-M.png">
+                            <source media="(min-width: 320px)" srcset="images/max-winter-S.png">
+                            <img src="images/max-winter-M.png" alt="Man with brown h air and brown button up shirt">
+                        </picture>
                         <h4>Max Winter</h4>
                         <p>Traveling From: Berlin, Germany</p>
                         <q>Great escape from my reality. Beautiful sunsets, wonderful people, great beer.</q>
                     </section>
+
                     <section>
-                        <img src="images/ines-villegoes.png" alt="lady person">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="images/ines-villegoes-L.png">
+                            <source media="(min-width: 780px)" srcset="images/ines-villegoes-M.png">
+                            <source media="(min-width: 320px)" srcset="images/ines-villegoes-S.png">
+                            <img src="images/ines-villegoes-M.png" alt="A police woman with long, curly brunette hair">
+                        </picture>
                         <h4>Inés Villegos</h4>
                         <p>Traveling From: Barcelona, Spain</p>
                         <q>A very safe environment for all travelers.</q>
                     </section>
+
                     <section>
                         <img src="images/carmen-lorenzo.png" alt="Carmen Lorenzo has long, dark brown hair and is wearing gold hoop earrings">
                         <h4>Carmen Lorenzo</h4>
                         <p>Traveling From: Madrid, Spain</p>
                         <q>Live, laugh, love-- everything you need in Majorca.</q>
                     </section>
+
                 </section>
+
                 <section>
                     <h3>About Your Destination</h3>
                     <section>
@@ -141,6 +187,7 @@
                         <p>923,608</p>
                     </section>
                 </section>
+
                 <section>
                     <h3>Contact Us</h3>
                     <form method="post" action="https://wp.zybooks.com/form-viewer.php">
@@ -185,6 +232,7 @@
                         <input type="submit" name="mySubmit" id="mySubmit" value="Submit Form">
                     </form>
                 </section>
+
             </article>
         </main>
         <footer>
