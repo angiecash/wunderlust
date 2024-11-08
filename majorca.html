@@ -39,6 +39,8 @@
          Use the outline feature in the validator to ensure that these have been added correctly. 
          See the image of the correct outline as a reference if you have questions.
         Also review the alt text on all of the images to ensure that it is descriptive and appropriate-->
+        <a href="#main">Skip to main content</a>
+
         <header>
 
             <picture>
@@ -60,7 +62,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="main">
             <article>  
                 <h2>Majorca</h2>
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
@@ -197,12 +199,12 @@
                     <h3>Contact Us</h3>
                     <form method="post" action="https://wp.zybooks.com/form-viewer.php">
                         <label for="fName">First Name<span>*</span></label>
-                        <input type="text" name="fName" id="fName" autocomplete="given-name" required>
+                        <input type="text" name="fName" id="fName" autocomplete="given-name" max-length="20" required aria-required="true">
                         <label for="lName">Last Name<span>*</span></label>
-                        <input type="text" name="lName" id="lName" autocomplete="family-name" required>
+                        <input type="text" name="lName" id="lName" autocomplete="family-name" max-length="20" required aria-required="true">
                         <fieldset>
                             <legend>Contact Method<span>*</span></legend>
-                            <input type="radio" name="contactPref" id="prefEmail" required>
+                            <input type="radio" name="contactPref" id="prefEmail" required aria-required="true">
                             <label for="prefEmail">Email</label>
                             <input type="radio" name="contactPref" id="prefText">
                             <label for="prefText">Text</label>
@@ -214,7 +216,7 @@
                         <label for="phone">Phone Number</label>
                         <input type="tel" name="phone" id="phone" autocomplete="tel">
                         <label for="destination">Destination<span>*</span></label>
-                        <select name="destination" id="destination" required>
+                        <select name="destination" id="destination" required aria-required="true">
                             <option value="">Choose an Option</option>
                             <option value="barcelona">Barcelona</option>
                             <option value="granada">Granada</option>
@@ -226,7 +228,7 @@
                             <option value="valencia">Valencia</option>
                         </select>
                         <label for="travelTime">Travel Time<span>*</span></label>
-                        <select name="travelTime" id="travelTime" required>
+                        <select name="travelTime" id="travelTime" required aria-required="true">
                             <option value="">Choose an Option</option>
                             <option value="fall">Fall</option>
                             <option value="winter">Winter</option>
@@ -234,7 +236,7 @@
                             <option value="summer">Summer</option>
                             <option value="flexible">Flexible</option>
                         </select>
-                        <input type="submit" name="mySubmit" id="mySubmit" value="Submit Form">
+                        <input type="submit" name="mySubmit" id="mySubmit" value="Submit Form" aria-label="Submit Form">
                     </form>
                 </section>
 
