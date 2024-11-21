@@ -61,20 +61,22 @@ table {
 	--light-gray: #EAEAEA;
 	--white: #FFFFFF;
 	--black: #000000;
-	--font-molle: "Molle", Georgia, serif;
-	--font-montserrat: "Monteserrat", "Times New Roman", serif;
+	--font-v1: "Molle", Georgia, serif;
+	--font-v2: "Montserrat", "Times New Roman", serif;
 }
 /* #endregion || Variables */
 
 /* #region || Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+
 *{
 	box-sizing: border-box;
-	line-height: 1.35;
+	line-height: 1.5;
 }
 /* #endregion || Global Styles */
 
 /* #region || Skip Link Styles */
-#skipLink {
+#skip {
 	position: absolute;
 	left: -10000px;
 	top: auto;
@@ -82,21 +84,261 @@ table {
 	width: 1px;
 	overflow: hidden;
 }
-#skipLink:focus {
+#skip:focus {
 		position: static;
-		width: auto;
+		width: auto;			
 		height: auto;
 }
 /* #endregion || Skip Link Styles */
 
+/* #region || Hidden Content Styles */
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+/* #endregion || Hidden Content Styles */
 
+/* #region || Headings & Text */
+h1 {
 
-/* #region || Headings */
+}
+h2 {
 
+}
+h3 {
+
+}
+h4 {
+
+}
+h1, h2, h3 {
+	font-family: var(--font-v1)
+}
+h4, p, q, small, nav, button, form {
+	font-family: var(--font-v2);
+}
 /* #endregion || Headings */
 
-/* #region || Mobile First Styles */
+/* #region || Navigation */
+#menu-toggle {
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 280px;
+	z-index: 1;
+	width: 200px;
+	height: 50px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+#menu-toggle a {
+	text-decoration: none;
+	color: var(--black);
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+#menu-toggle a:hover {
+	color: var(--white);
+}
+#menu-toggle input {
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	top: 0;
+	left: 0;
+	padding: 0;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 2;
+	-webkit-touch-callout: none;
+}
+#menu-toggle label {
+	position: absolute;
+	display: block;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: var(--yellow);
+}
+#menu-toggle ul {
+	position: absolute;
+	width: 380px;
+	list-style-type: none;
+	left: -1000px;
+	/*
+	-webkit-transition: left 0.3s ease;
+	-o-transition: left 0.3s ease;
+	transition: left 0.3s ease;
+	*/
+}
+#menu-toggle ul li {
+	padding: 10px 0;
+	font-size: 18px;
+	border: 1px solid var(--black);
+	background-color: var(--teal);
+	text-align: center;
+}
+#menu-toggle input:checked ~ label {
+	left: -200px;
+	top: 20px;
+	width: 380px;
+}
+#menu-toggle input:checked ~ ul {
+	left: -200px;
+	top: 50px;
+}
+#menu-toggle input:checked {
+	top: 20px;
+	left: -200px;
+	width: 380px;
+}
 
+/*
+#menu-toggle input:checked ~ label {
+	width: 380px;
+	background-color: var(--black);
+	color: var(--white);
+}
+#menu-toggle input:checked ~ ul {
+	display: block;
+	cursor: pointer;
+	z-index: 2;
+	max-height: 50px;
+	width: 380px;
+	-webkit-touch-callout: none;
+}
+
+/*
+
+#menu-toggle ul {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height: 0.3s ease;
+}
+	*/
+/*
+#toggle label {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: var(--black);
+}
+#menu-toggle li {
+	display: block;
+	width: 100%;
+	height: 50px;
+	position: relative;
+	background: var(--teal);
+	color: var(--black);
+	z-index: 1;
+	text-align: center;
+	padding-top: 15px;
+	-webkit-transform-origin: 4px 0px;
+	-ms-transform-origin: 4px 0px;
+	transform-origin: 4px 0px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+*/
+.active {
+	background-color: var(--purple);
+}
+/* #endregion || Navigation */
+
+/* #region || Mobile First Styles */
+p {
+
+}
+
+#main-content {
+
+}
+article {
+
+}
+#intro {
+
+}
+#img-grid {
+
+}
+#logo {
+
+}
+
+#plan {
+
+}
+#plan section {
+
+}
+
+#testimonials {
+
+}
+q {
+
+}
+#testimonials section {
+	
+}
+
+#about {
+
+}
+/* Contact Form */
+#contact {
+
+}
+.form-required {
+
+}
+#names {
+
+}
+.required {
+
+}
+#nums {
+
+}
+fieldset {
+
+}
+legend {
+
+}
+.radio-input {
+
+}
+.radio-label {
+
+}
+/* Destination Selections for Contact Form*/
+#selects {
+	
+}
+.custom-select {
+
+}
+.focus {
+
+}
+
+/* Footer Styles */
+footer {
+
+}
 /* #endregion || Mobile First Styles */
 
 /* #region || Small Screen Styles */
