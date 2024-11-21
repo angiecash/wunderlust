@@ -104,16 +104,18 @@ table {
 
 /* #region || Headings & Text */
 h1 {
-
+	margin-left: 15px;
 }
 h2 {
-
+	margin-left: 15px;
 }
 h3 {
-
+	font-size: 2.5rem;
 }
 h4 {
-
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 h1, h2, h3 {
 	font-family: var(--font-v1)
@@ -183,7 +185,7 @@ h4, p, q, small, nav, button, form {
 	*/
 }
 #menu-toggle ul li {
-	padding: 10px 10px;
+	padding: 10px 10px ;
 	font-size: 18px;
 	border: 1px solid var(--black);
 	background-color: var(--teal);
@@ -210,63 +212,16 @@ h4, p, q, small, nav, button, form {
 	left: -200px;
 	width: 380px;
 }
-
 /*
-#menu-toggle input:checked ~ label {
-	width: 380px;
-	background-color: var(--black);
-	color: var(--white);
-}
-#menu-toggle input:checked ~ ul {
-	display: block;
-	cursor: pointer;
-	z-index: 2;
-	max-height: 50px;
-	width: 380px;
-	-webkit-touch-callout: none;
-}
-
-/*
-
-#menu-toggle ul {
-	overflow: hidden;
-	max-height: 0;
-	transition: max-height: 0.3s ease;
-}
-	*/
-/*
-#toggle label {
-	display: block;
-	width: 30px;
-	height: 30px;
-	background-color: var(--black);
-}
-#menu-toggle li {
-	display: block;
-	width: 100%;
-	height: 50px;
-	position: relative;
-	background: var(--teal);
-	color: var(--black);
-	z-index: 1;
-	text-align: center;
-	padding-top: 15px;
-	-webkit-transform-origin: 4px 0px;
-	-ms-transform-origin: 4px 0px;
-	transform-origin: 4px 0px;
-	-webkit-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-*/
 .active {
 	background-color: var(--purple);
 }
+*/
 /* #endregion || Navigation */
 
 /* #region || Mobile First Styles */
 p {
-
+	margin-left: 15px;
 }
 
 #main-content {
@@ -279,19 +234,31 @@ article {
 
 }
 #img-grid {
-
+	display: flex;
+	flex-direction: column;
 }
 #logo {
 
 }
-
 #plan {
-
+	background-color: var(--yellow);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 #plan section {
-
+	background-color: var(--teal);
+	border-radius: 15px;
+	border: 3px solid var(--white);
+	text-align: center;
+	padding: 30px;
+	margin: 20px;
+	justify-content: space-evenly;
 }
-
+#plan section img {
+	padding: 10px;
+}
 #testimonials {
 
 }
