@@ -1,5 +1,6 @@
 /* Angela Cash */
 
+/* #region || CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,3 +49,72 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* #endregion || CSS Reset */
+
+/* #region || Variables  */
+:root {
+	--yellow: #F6D64A;
+	--teal: #55BCD5;
+	--purple: #9B26B0;
+	--blue: #499BD2;
+	--dark-gray: #222222;
+	--light-gray: #EAEAEA;
+	--white: #FFFFFF;
+	--black: #000000;
+	--font-molle: "Molle", Georgia, serif;
+	--font-montserrat: "Monteserrat", "Times New Roman", serif;
+}
+/* #endregion || Variables */
+
+/* #region || Global Styles */
+*{
+	box-sizing: border-box;
+	line-height: 1.35;
+}
+/* #endregion || Global Styles */
+
+/* #region || Skip Link Styles */
+#skipLink {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+#skipLink:focus {
+		position: static;
+		width: auto;
+		height: auto;
+}
+/* #endregion || Skip Link Styles */
+
+
+
+/* #region || Headings */
+
+/* #endregion || Headings */
+
+/* #region || Mobile First Styles */
+
+/* #endregion || Mobile First Styles */
+
+/* #region || Small Screen Styles */
+@media only screen and (min-width: 320px) {
+	
+}
+/* #endregion || Small Screen Styles */
+
+/* #region ||  Medium Screen Styles */
+@media only screen and (min-width: 768px) {
+
+}
+/* #endregion || Medium Screen Styles */
+
+/* #region || Large Screen Styles */
+@media only screen and (min-width: 1000px) {
+	
+}
+/* #endregion || Large Screen Styles */
+
+
