@@ -186,11 +186,12 @@ h4, p, q, small, nav, button, form {
 	*/
 }
 #menu-toggle ul li {
-	padding: 10px 10px ;
+	padding: 10px 10px;
 	font-size: 18px;
 	border: 1px solid var(--black);
 	background-color: var(--teal);
 	text-align: center;
+	text-transform: uppercase;
 }
 #menu-toggle input:checked ~ label {
 	left: -200px;
@@ -213,14 +214,14 @@ h4, p, q, small, nav, button, form {
 	left: -200px;
 	width: 380px;
 }
-/*
-.active {
-	background-color: var(--purple);
-}
-*/
 /* #endregion || Navigation */
 
 /* #region || Mobile First Styles */
+header {
+	background: linear-gradient(180deg, var(--teal), 80%, var(--white));
+	display: flex;
+	flex-flow: column nowrap;
+}
 p {
 	margin-left: 15px;
 }
@@ -239,7 +240,7 @@ article {
 	flex-direction: column;
 }
 #logo {
-
+	
 }
 #plan {
 	background-color: var(--yellow);
@@ -329,16 +330,47 @@ footer a {
 	
 }
 /* #endregion || Mobile First Styles */
-
-/* #region || Small Screen Styles */
+/*
+/* #region || Small Screen Styles 
 @media only screen and (min-width: 320px) {
 	
 }
-/* #endregion || Small Screen Styles */
+/* #endregion || Small Screen Styles 
+*/
 
 /* #region ||  Medium Screen Styles */
 @media only screen and (min-width: 768px) {
+header {
+	flex-flow: row nowrap;
+}
+#logo {
 
+}
+#menu-toggle label, #menu-toggle input {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+#menu-toggle ul {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	top: 150px;
+}
+#menu-toggle ul li {
+	padding: 10px 10px;
+	font-size: 18px;
+	border: none;
+	background-color: var(--white);
+	text-align: center;
+	
+}
+.active {
+	background-color: var(--yellow);
+}
 }
 /* #endregion || Medium Screen Styles */
 
