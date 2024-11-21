@@ -73,6 +73,9 @@ table {
 	box-sizing: border-box;
 	line-height: 1.5;
 }
+a {
+	text-decoration: none;
+}
 /* #endregion || Global Styles */
 
 /* #region || Skip Link Styles */
@@ -111,6 +114,7 @@ h2 {
 }
 h3 {
 	font-size: 2.5rem;
+	margin-top: 15px;
 }
 h4 {
 	font-size: 1.5rem;
@@ -139,13 +143,10 @@ h4, p, q, small, nav, button, form {
 	-ms-user-select: none;
 }
 #menu-toggle a {
-	text-decoration: none;
 	color: var(--black);
-	/*
 	-webkit-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
 	transition: color 0.3s ease;
-	*/
 }
 #menu-toggle a:hover {
 	color: var(--white);
@@ -253,24 +254,30 @@ article {
 	border: 3px solid var(--white);
 	text-align: center;
 	padding: 30px;
-	margin: 20px;
-	justify-content: space-evenly;
+	margin-top: 10px;
 }
 #plan section img {
 	padding: 10px;
 }
+
 #testimonials {
 
 }
+
+#testimonials div {
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+}
 q {
-
+	width: 200px;
 }
-#testimonials section {
-	
-}
-
 #about {
-
+	background-color: var(--blue);
+	text-align: center;
+}
+#about div {
+	flex-flow: row wrap;
 }
 /* Contact Form */
 #contact {
@@ -313,7 +320,13 @@ legend {
 
 /* Footer Styles */
 footer {
-
+	background-color: var(--light-gray);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+footer a {
+	
 }
 /* #endregion || Mobile First Styles */
 
