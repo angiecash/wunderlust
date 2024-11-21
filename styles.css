@@ -139,9 +139,11 @@ h4, p, q, small, nav, button, form {
 #menu-toggle a {
 	text-decoration: none;
 	color: var(--black);
+	/*
 	-webkit-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
 	transition: color 0.3s ease;
+	*/
 }
 #menu-toggle a:hover {
 	color: var(--white);
@@ -173,15 +175,15 @@ h4, p, q, small, nav, button, form {
 	position: absolute;
 	width: 380px;
 	list-style-type: none;
-	left: -1000px;
+	top: -1000px;
 	/*
-	-webkit-transition: left 0.3s ease;
-	-o-transition: left 0.3s ease;
-	transition: left 0.3s ease;
+	-webkit-transition: top 0.3s ease;
+	-o-transition: top 0.3s ease;
+	transition: top 0.3s ease;
 	*/
 }
 #menu-toggle ul li {
-	padding: 10px 0;
+	padding: 10px 10px;
 	font-size: 18px;
 	border: 1px solid var(--black);
 	background-color: var(--teal);
@@ -191,10 +193,17 @@ h4, p, q, small, nav, button, form {
 	left: -200px;
 	top: 20px;
 	width: 380px;
+	height: 30px;
+	background: var(--black);
+	color: var(--white);
 }
 #menu-toggle input:checked ~ ul {
 	left: -200px;
 	top: 50px;
+	text-transform: uppercase;
+}
+#menu-toggle input:checked ~ ul li {
+	height: 60px;
 }
 #menu-toggle input:checked {
 	top: 20px;
