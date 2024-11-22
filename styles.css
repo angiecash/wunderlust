@@ -107,10 +107,12 @@ a {
 
 /* #region || Headings & Text */
 h1 {
-	font-size: 50px;
+	font-size: 65px;
 	margin-left: 15px;
+	padding: 20px;
 }
 h2 {
+	font-size: 45px;
 	margin-left: 15px;
 }
 h3 {
@@ -118,7 +120,7 @@ h3 {
 	margin-top: 15px;
 }
 h4 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -131,13 +133,16 @@ h4, p, q, small, nav, button, form {
 /* #endregion || Headings */
 
 /* #region || Navigation */
-#menu-toggle {
+nav {
 	display: grid;
+	justify-items: end;
+	width: 100%;
+}
+#menu-toggle {
 	position: absolute;
 	top: 20px;
-	left: 390px;
+	align-items: center;
 	z-index: 1;
-	width: calc(100% - 2rem);
 	height: 50px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -161,14 +166,13 @@ h4, p, q, small, nav, button, form {
 	z-index: 2;
 }
 #menu-toggle label {
-	position: absolute;
-	width: 40%;
+	display: grid;
+	width: 250px;
 	height: 60px;
 	font-size: 20px;
-	margin: 0 auto;
 	text-align: center;
+	align-items: center;
 	background: var(--yellow);
-	text-align: center;
 }
 #menu-toggle ul {
 	position: relative;
@@ -186,22 +190,19 @@ h4, p, q, small, nav, button, form {
 	font-size: 18px;
 	border: 1px solid var(--black);
 	background-color: var(--teal);
-	width: 350%;
 	height: 100px;
 }
 
 /* When the input is checked */
 #menu-toggle input:checked {
 	top: 20px;
-	left: -450px;
+	/*left: -450px;*/
 	width: 100%;
 	padding: 0;
 	margin: 0;
 }
 #menu-toggle input:checked ~ label {
-	left: -385px;
-	top: 20px;
-	width: 100%;
+	width: calc(100%);
 	padding: 20px;
 	background: var(--black);
 	color: var(--white);
@@ -231,6 +232,9 @@ header {
 	display: flex;
 	flex-flow: column nowrap;
 }
+header p {
+	font-size: 23px;
+}
 #logo img {
 	height: 70px;
 	width: auto;
@@ -258,10 +262,11 @@ article {
 }
 #plan {
 	background-color: var(--yellow);
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	justify-content: center;
 	align-items: center;
+	padding: 10px;
+	grid-gap: 10px;
 }
 #plan section {
 	background-color: var(--teal);
@@ -274,15 +279,20 @@ article {
 #plan section img {
 	padding: 10px;
 }
-
+/*
 #testimonials {
 
 }
+*/
 
 #testimonials div {
 	display: flex;
 	flex-flow: column;
 	text-align: center;
+}
+#testimonials h3 {
+	text-align: left;
+	font-size: 25px;
 }
 q {
 	width: 200px;
@@ -290,6 +300,10 @@ q {
 #about {
 	background-color: var(--blue);
 	text-align: center;
+}
+#about h4 {
+	font-size: 18px;
+	text-transform: uppercase;
 }
 #about div {
 	flex-flow: row wrap;
