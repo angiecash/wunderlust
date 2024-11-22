@@ -107,6 +107,7 @@ a {
 
 /* #region || Headings & Text */
 h1 {
+	font-size: 50px;
 	margin-left: 15px;
 }
 h2 {
@@ -133,14 +134,16 @@ h4, p, q, small, nav, button, form {
 #menu-toggle {
 	display: block;
 	position: absolute;
-	top: 50px;
-	left: 280px;
+	top: 20px;
+	left: 390px;
 	z-index: 1;
-	width: 200px;
+	width: calc(100% - 2rem);
 	height: 50px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 #menu-toggle a {
 	color: var(--black);
@@ -167,8 +170,8 @@ h4, p, q, small, nav, button, form {
 #menu-toggle label {
 	position: absolute;
 	display: block;
-	width: 200px;
-	height: 50px;
+	width: 40%;
+	height: 60px;
 	font-size: 20px;
 	margin: 0 auto;
 	text-align: center;
@@ -221,6 +224,11 @@ header {
 	background: linear-gradient(180deg, var(--teal), 80%, var(--white));
 	display: flex;
 	flex-flow: column nowrap;
+}
+#logo img {
+	height: 70px;
+	width: auto;
+	margin-top: 15px;
 }
 p {
 	margin-left: 15px;
