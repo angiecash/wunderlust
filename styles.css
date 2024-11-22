@@ -132,94 +132,100 @@ h4, p, q, small, nav, button, form {
 
 /* #region || Navigation */
 #menu-toggle {
-	display: block;
+	display: grid;
 	position: absolute;
 	top: 20px;
 	left: 390px;
 	z-index: 1;
 	width: calc(100% - 2rem);
 	height: 50px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 #menu-toggle a {
 	color: var(--black);
-	-webkit-transition: color 0.3s ease;
-	-o-transition: color 0.3s ease;
-	transition: color 0.3s ease;
 }
 #menu-toggle a:hover {
 	color: var(--white);
 }
 #menu-toggle input {
-	display: block;
 	position: absolute;
-	width: 200px;
-	height: 50px;
+	width: 40%;
+	height: 60px;
 	top: 0;
 	left: 0;
 	padding: 0;
+	margin: 0;
 	cursor: pointer;
 	opacity: 0;
 	z-index: 2;
-	-webkit-touch-callout: none;
 }
 #menu-toggle label {
 	position: absolute;
-	display: block;
 	width: 40%;
 	height: 60px;
 	font-size: 20px;
 	margin: 0 auto;
 	text-align: center;
 	background: var(--yellow);
+	text-align: center;
 }
 #menu-toggle ul {
-	position: absolute;
-	width: 380px;
+	position: relative;
 	list-style-type: none;
 	top: -1000px;
-	/*
-	-webkit-transition: top 0.3s ease;
-	-o-transition: top 0.3s ease;
-	transition: top 0.3s ease;
-	*/
+	left: -375px;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	align-items: center;
+	text-align: center;
+	width: 40%;
 }
 #menu-toggle ul li {
-	padding: 10px 10px;
+	padding: 20px;
 	font-size: 18px;
 	border: 1px solid var(--black);
 	background-color: var(--teal);
-	text-align: center;
-	text-transform: uppercase;
+	width: 350%;
+	height: 100px;
+}
+
+/* When the input is checked */
+#menu-toggle input:checked {
+	top: 20px;
+	left: -450px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 #menu-toggle input:checked ~ label {
-	left: -200px;
+	left: -385px;
 	top: 20px;
-	width: 380px;
-	height: 30px;
+	width: 100%;
+	padding: 20px;
 	background: var(--black);
 	color: var(--white);
 }
+
 #menu-toggle input:checked ~ ul {
-	left: -200px;
-	top: 50px;
-	text-transform: uppercase;
+	position: absolute;
+	/*
+	width: calc(100% + 2.5rem);
+	left: -630px;
+	*/
+	top: 80px;
+	
 }
-#menu-toggle input:checked ~ ul li {
-	height: 60px;
-}
-#menu-toggle input:checked {
-	top: 20px;
-	left: -200px;
-	width: 380px;
-}
+
+
 /* #endregion || Navigation */
 
 /* #region || Mobile First Styles */
+/*
+body {
+	max-width: 380px;
+}
+	*/
 header {
 	background: linear-gradient(180deg, var(--teal), 80%, var(--white));
 	display: flex;
