@@ -355,7 +355,6 @@ input[type="text"], input[type="email"], input[type="tel"], .custom-select selec
 	border: 4px solid var(--purple);
 	color: var(--black);
 }
-
 .radio-label {
 	font-weight: normal;
 	padding-left: 10px;
