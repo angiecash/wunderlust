@@ -286,19 +286,37 @@ header p {
 #about {
 	background-color: var(--blue);
 	text-align: center;
+	line-height: 1.2;
+}
+#about h3 {
+	text-align: left;	
+	margin: 0 0 15px 20px; 
+	padding-top: 20px;
+	width: 50%;
 }
 #about h4 {
-	font-size: 18px;
+	font-size: 20px;
 	text-transform: uppercase;
 }
+#about section {
+	width: 50%;
+}
 #about div {
+	display: flex;
 	flex-flow: row wrap;
+}
+#about img { 
+	width: 120px;
+	height: 120px;
+}
+#about p {
+	font-size: 18px;
+	margin-bottom: 15px;
 }
 /* Contact Form */
 #contact {
 	width: 85%;
 	margin: 0 auto;
-	
 }
 #contact h3 {
 	font-size: 40px;
@@ -309,6 +327,7 @@ header p {
 	font-size: 15px;
 	padding-left: 5px;
 	font-family: var(--font-v2);
+	font-style: italic;
 }
 .required {
 	color: var(--purple);
@@ -357,8 +376,8 @@ input[type="radio"] {
 }
 input[type="radio"]:checked::before {
 	content: "";
-	width: 50px;
-	height: 50px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
 	background-color: var(--purple);
 }
@@ -374,7 +393,7 @@ input[type="radio"]:checked::before {
 	padding: 10px;
 	font-size: 16px;
 	box-sizing: border-box;
-	border: 2px solid #9b26b0;
+	border: 4px solid var(--purple);
 }
 /*
 .custom-select .focus {
