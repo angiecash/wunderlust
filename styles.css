@@ -68,13 +68,9 @@ table {
 
 /* #region || Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
-
 *{
 	box-sizing: border-box;
 	line-height: 1.8;
-}
-html {
-	width: 100%;
 }
 a {
 	text-decoration: none;
@@ -193,13 +189,13 @@ header {
 	flex-flow: column nowrap;	
 }
 header h1 {
-	margin-left: 28px;
+	padding-left: 28px;
 	margin-top: 20px;
 }
 header p {
 	font-size: 23px;
-	margin-left: 30px;
-	margin-right: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 	width: 80%;
 	line-height: 1.9;
 }
@@ -214,7 +210,7 @@ header p {
 	margin-top: 30px;
 }
 #intro h2, #intro p {
-	margin-left: 30px;
+	padding-left: 30px;
 }
 #intro p {
 	width: 75%;
@@ -264,7 +260,7 @@ header p {
 #testimonials h3 {
 	text-align: left;
 	font-size: 40px;
-	margin-left: 40px;
+	padding-left: 40px;
 	margin-top: 30px;
 }
 #testimonials q, #testimonials p {
@@ -290,7 +286,6 @@ header p {
 }
 #about h3 {
 	text-align: left;	
-	margin: 0 0 15px 20px; 
 	padding-top: 20px;
 	width: 50%;
 }
@@ -304,6 +299,8 @@ header p {
 #about div {
 	display: flex;
 	flex-flow: row wrap;
+	margin: 0 auto;
+	width: 80%;
 }
 #about img { 
 	width: 120px;
@@ -343,7 +340,6 @@ header p {
 #contact label {
 	display: flex;
 	align-items: center;
-	text-transform: uppercase;
 }
 input[type="text"], input[type="email"], input[type="tel"], .custom-select select {
 	width: 100%;
@@ -394,19 +390,7 @@ input[type="radio"]:checked::before {
 	box-sizing: border-box;
 	border: 4px solid var(--purple);
 }
-/*
-.custom-select .focus {
-	width: 0;
-	height: 0;
-	right: 10px;
-	position: absolute;
-	margin-right: 25px;
-	top: 45%;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 10px solid #9b26b0;
-}
-*/
+
 /* Submit button */
 input[type="submit"] {
 	width: 100%;
@@ -420,7 +404,6 @@ input[type="submit"] {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-
 
 /* Footer Styles */
 footer {
@@ -448,12 +431,33 @@ footer a {
 
 /* #region ||  Medium Screen Styles */
 @media only screen and (min-width: 768px) {
+body {
+	background: linear-gradient(180deg, var(--teal) 4%, var(--white) 8%);
+}
 header {
-	flex-flow: row nowrap;
+	background: transparent;
+	position: relative; 
+	display: grid;
+	grid-template-columns: 30% auto;
+	grid-template-rows: 100px 50px 100px;
+	margin-top: 40px;
 }
-#logo {
-
+#logo a, #logo img {
+	width: 260px;
+	height: auto;
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
 }
+header h1 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	font-size: 50px;
+}
+header p {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+/* Menu Medium Styles */
 #menu-toggle label, #menu-toggle input {
 	position: absolute;
 	left: -10000px;
@@ -465,25 +469,35 @@ header {
 #menu-toggle ul {
 	display: flex;
 	flex-flow: row nowrap;
-	width: 100%;
-	top: 150px;
+	justify-content: space-evenly;
+	top: 210px;
 }
-#menu-toggle ul li {
-	padding: 10px 10px;
-	font-size: 18px;
-	border: none;
+
+#menu-toggle a {
 	background-color: var(--white);
-	text-align: center;
-	
+	border: none;
+	padding: 20px;
+	width: 150px;
 }
-.active {
+#menu-toggle a:hover {
+	background-color: var(--purple);
+}
+#menu-toggle .active > a {
 	background-color: var(--yellow);
 }
+#menu-toggle input {
+	margin: 0;
+}
+/* Intro Medium Styles */
+article {
+	margin-top: 25px;
+}
+/* Image Grid Medium Styles */
 #img-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	padding: 20px;
+	/*padding: 20px;*/
 }
 #img-grid img:first-child {
 	order: 2;
@@ -491,6 +505,69 @@ header {
 #img-grid picture {
 	grid-row: 2 / 3;
 	grid-column: 1 / span 2;
+}
+/* Plan Medium Styles */
+#plan div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-content: center;
+	gap: 15px;
+	padding-bottom: 15px;
+}
+#plan section {
+	padding: 10px;
+	width: 300px;
+	height: 285px;
+}
+#plan h4 {
+	font-size: 22px;
+}
+#plan section img {
+	padding: 10px;
+	width: 180px;
+	height: auto;
+	padding-top: 15px;
+}
+#plan section:nth-child(2) img {
+	width: 200px;
+	height: auto;
+	padding-top: 40px;
+}
+/* Testimonials Medium Styles */
+#testimonials div {
+	width: 75%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 25px;
+	line-height: 1.2;
+}
+/* About Medium Styles */
+#about h3 {
+	width: 100%;
+	padding-left: 80px;
+}
+#about div {
+	flex-flow: row nowrap;
+}
+/* Contact Form Medium Styles */
+#contact fieldset {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+#contact legend {
+	grid-column: 1 / 2;
+}
+#selects {
+	display: grid;
+	grid-template-rows: 10% 25% 10% 25% 30%;
+	grid-template-columns: 1fr 1fr;
+}
+#contact label, #contact .custom-select {
+	grid-column: 1 / 3;
+}
+input[type="submit"] {
+	grid-column: 2 / 3;
 }
 /* Footer */
 footer {
@@ -501,16 +578,113 @@ footer {
 /* #endregion || Medium Screen Styles */
 
 /* #region || Large Screen Styles */
-@media only screen and (min-width: 1000px) {
-	
-
+@media only screen and (min-width: 1200px) {
+body {
+	background: linear-gradient(180deg, var(--teal) 2%, var(--white) 6%);
+}
+header {
+	position: relative; 
+	display: grid;
+	grid-template-columns: 15% 80%;
+	grid-template-rows: 80px 50px 80px;
+	margin-top: 40px;
+}
+/* Large Menu Styles */
+#menu-toggle ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	padding-left: 10px;
+	top: -40px;
+	right: 0;
+	gap: 15px;
+}
+/* Large Intro Styles */
+#intro {
+	display: grid;
+	grid-template-columns: 45% 55%;
+	grid-template-rows: 10% 90%;
+}
+#intro h2 {
+	grid-column: 1 / 2;
+	margin-top: 0;
+}
+#intro p {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	width: 90%;
+}
+#img-grid {
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+}
+/* Large Plan Styles */
+#plan {
+	height: 500px;
+	padding-top: 60px;
+}
+#plan div {
+	grid-template-columns: repeat(4, 1fr);
+}
+/* Large Testimonials Styles */
+#testimonials {
+	height: 450px;
+	padding-top: 25px;
+}
+#testimonials div {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 90%;
+	justify-content: space-around;
+}
+#testimonials img {
+	width: 150px;
+}
+#testimonials h4 {
+	font-size: 25px;
+}
+#testimonials p {
+	font-size: 20px;
+}
+#testimonials q {
+	font-size: 16px;
+}
+/* Large About Styles */
+#about {
+	height: 450px;
+	padding-top: 65px;
+}
+#about h3 {
+	font-size: 35px;
+}
+/* Large Contact Form Styles */
+#contact {
+	width: 95%;
+}
+#contact form {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+}
+input[type="radio"] {
+	width: 60px;
+	height: 60px;
+}
+input[type="radio"]:checked::before {
+	width: 37px;
+	height: 37px;
+}
+#contact fieldset {
+	display: flex;
+	flex-flow: row nowrap; 
+	justify-content: space-between;
+}
+/* Large Footer Styles */
 footer {
 	display: grid;
-	grid-template-columns: 6fr 1fr 1fr;
+	grid-template-columns: 60% 20% 20%;
 	text-align: left;
-}
-footer p {
-	
 }
 footer a {
 	padding: 20px;
