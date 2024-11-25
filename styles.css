@@ -106,18 +106,18 @@ a {
 
 /* #region || Headings & Text */
 h1 {
-	font-size: 60px;
+	font-size: 3.75em;
 }
 h2 {
-	font-size: 45px;
+	font-size: 2.8125em;
 }
 h3 {
-	font-size: 40px;
+	font-size: 2.5em;
 }
 h4 {
-	font-size: 2rem;
+	font-size: 2em;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 700;
 }
 h1, h2, h3 {
 	font-family: var(--font-v1)
@@ -139,7 +139,7 @@ nav {
 	border: 1px solid var(--black);
 	padding: 50px;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 700;
 }
 #menu-toggle a:hover {
 	color: var(--white);
@@ -157,7 +157,7 @@ nav {
 	padding: 25px;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 700;
 }
 #menu-toggle ul {
 	width: 100%;
@@ -183,6 +183,9 @@ nav {
 /* #endregion || Navigation */
 
 /* #region || Mobile First Styles */
+body {
+	font-size: 1em;
+}
 header {
 	background: linear-gradient(180deg, var(--teal), 65%, var(--white));
 	display: flex;
@@ -193,9 +196,8 @@ header h1 {
 	margin-top: 20px;
 }
 header p {
-	font-size: 23px;
+	font-size: 1.4em;
 	padding-left: 30px;
-	padding-right: 30px;
 	width: 80%;
 	line-height: 1.9;
 }
@@ -234,7 +236,7 @@ header p {
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	padding: 10px;
+	padding: 10px 10px 50px 10px;
 	grid-gap: 10px;
 }
 #plan section {
@@ -259,12 +261,12 @@ header p {
 }
 #testimonials h3 {
 	text-align: left;
-	font-size: 40px;
+	font-size: 2.5em;
 	padding-left: 40px;
 	margin-top: 30px;
 }
 #testimonials q, #testimonials p {
-	font-size: 22px;
+	font-size: 1.375em;
 	line-height: 1.2;
 	margin: 10px;
 }
@@ -286,11 +288,12 @@ header p {
 }
 #about h3 {
 	text-align: left;	
-	padding-top: 20px;
+	padding-top: 1.25em;
 	width: 50%;
+	padding-left: 40px;
 }
 #about h4 {
-	font-size: 20px;
+	font-size: 1.25em;
 	text-transform: uppercase;
 }
 #about section {
@@ -307,7 +310,7 @@ header p {
 	height: 120px;
 }
 #about p {
-	font-size: 18px;
+	font-size: 1.125em;
 	margin-bottom: 15px;
 }
 /* Contact Form */
@@ -316,12 +319,12 @@ header p {
 	margin: 0 auto;
 }
 #contact h3 {
-	font-size: 40px;
+	font-size: 2.5em;
 	margin-top: 25px;
 	text-align: left;
 }
 .form-required {
-	font-size: 15px;
+	font-size: 0.9375em;
 	padding-left: 5px;
 	font-family: var(--font-v2);
 	font-style: italic;
@@ -329,12 +332,12 @@ header p {
 .required {
 	color: var(--purple);
 	padding-left: 5px;
-	font-size: 25px;
+	font-size: 1.5625em;
 }
 #contact legend, #contact label {
-	font-size: 20px;
+	font-size: 1.25em;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 700;
 	height: auto;
 }
 #contact label {
@@ -346,7 +349,7 @@ input[type="text"], input[type="email"], input[type="tel"], .custom-select selec
 	height: 70px;
 	padding: 5px;
 	display: block;
-	font-size: 16px;
+	font-size: 1em;
 	margin-bottom: 10px;
 	border: 4px solid var(--purple);
 	color: var(--black);
@@ -386,7 +389,7 @@ input[type="radio"]:checked::before {
 .custom-select select {
 	width: 100%;
 	padding: 10px;
-	font-size: 16px;
+	font-size: 1em;
 	box-sizing: border-box;
 	border: 4px solid var(--purple);
 }
@@ -397,12 +400,12 @@ input[type="submit"] {
 	border: none;
 	padding: 20px;
 	display: block;
-	font-size: 20px;
+	font-size: 1.25em;
 	margin-bottom: 25px;
 	color: #ffffff;
 	background-color: #9b26b0;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /* Footer Styles */
@@ -451,7 +454,7 @@ header {
 header h1 {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
-	font-size: 50px;
+	font-size: 3.125em;
 }
 header p {
 	grid-column: 2 / 3;
@@ -527,7 +530,7 @@ article {
 	height: 285px;
 }
 #plan h4 {
-	font-size: 22px;
+	font-size: 1.375em;
 }
 #plan section img {
 	padding: 10px;
@@ -644,7 +647,7 @@ header {
 	height: 235px;
 }
 #plan h4 {
-	font-size: 18px;
+	font-size: 1.125em;
 }
 #plan section img {
 	padding: 10px;
@@ -672,13 +675,13 @@ header {
 	width: 150px;
 }
 #testimonials h4 {
-	font-size: 25px;
+	font-size: 1.5625em;
 }
 #testimonials p {
-	font-size: 20px;
+	font-size: 1.25em;
 }
 #testimonials q {
-	font-size: 16px;
+	font-size: 1em;
 }
 /* Large About Styles */
 #about {
@@ -686,7 +689,7 @@ header {
 	padding-top: 65px;
 }
 #about h3 {
-	font-size: 35px;
+	font-size: 2.1875em;
 }
 /* Large Contact Form Styles */
 #contact {
