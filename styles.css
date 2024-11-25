@@ -492,12 +492,18 @@ header p {
 article {
 	margin-top: 25px;
 }
+#intro {
+	padding: 0 20px;
+}
+#intro p {
+	width: 100%;
+}
 /* Image Grid Medium Styles */
 #img-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	/*padding: 20px;*/
+	padding: 20px;
 }
 #img-grid img:first-child {
 	order: 2;
@@ -542,6 +548,9 @@ article {
 	gap: 25px;
 	line-height: 1.2;
 }
+#testimonials h3 {
+	padding-left: 75px;
+}
 /* About Medium Styles */
 #about h3 {
 	width: 100%;
@@ -552,8 +561,10 @@ article {
 }
 /* Contact Form Medium Styles */
 #contact fieldset {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
+	/*grid-template-columns: 1fr 1fr 1fr;*/
+	flex-flow: row nowrap;
+	justify-content: space-between;
 }
 #contact legend {
 	grid-column: 1 / 2;
@@ -627,6 +638,25 @@ header {
 #plan div {
 	grid-template-columns: repeat(4, 1fr);
 }
+#plan section {
+	padding: 10px;
+	width: 250px;
+	height: 235px;
+}
+#plan h4 {
+	font-size: 18px;
+}
+#plan section img {
+	padding: 10px;
+	width: 150px;
+	height: auto;
+	padding-top: 15px;
+}
+#plan section:nth-child(2) img {
+	width: 200px;
+	height: auto;
+	padding-top: 40px;
+}
 /* Large Testimonials Styles */
 #testimonials {
 	height: 450px;
@@ -661,6 +691,7 @@ header {
 /* Large Contact Form Styles */
 #contact {
 	width: 95%;
+	padding-bottom: 30px;
 }
 #contact form {
 	display: grid;
