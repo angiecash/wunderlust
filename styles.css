@@ -191,13 +191,14 @@ header {
 	display: flex;
 	flex-flow: column nowrap;	
 }
+header h1, header p {
+	padding-left: 30px;
+}
 header h1 {
-	padding-left: 28px;
 	margin-top: 20px;
 }
 header p {
 	font-size: 1.4em;
-	padding-left: 30px;
 	width: 80%;
 	line-height: 1.9;
 }
