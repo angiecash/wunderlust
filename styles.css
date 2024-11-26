@@ -750,11 +750,12 @@ footer {
 	font-size: 0.8em;
 }
 footer p {
-	flex: 800px 0 0;
+	flex-basis: 800px;
 	flex-grow: 2;
 }
 footer a {
 	padding: 20px;
+	flex-basis: 200px;
 }
 }
 /* #endregion || Large Screen Styles */
