@@ -439,7 +439,7 @@ body {
 }
 header {
 	background: transparent;
-	/*position: relative; */
+	position: relative;
 	display: grid;
 	grid-template-columns: 30% auto;
 	grid-template-rows: 20% 20% auto;
