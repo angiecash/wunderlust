@@ -439,10 +439,10 @@ body {
 }
 header {
 	background: transparent;
-	position: relative; 
+	/*position: relative; */
 	display: grid;
 	grid-template-columns: 30% auto;
-	grid-template-rows: 20% auto auto;
+	grid-template-rows: 20% 20% auto;
 	/*grid-template-rows: 100px 50px 100px;*/
 	grid-template-areas:
 		"logo h1"
