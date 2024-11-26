@@ -191,14 +191,14 @@ header {
 	display: flex;
 	flex-flow: column nowrap;	
 }
-header h1, header p {
-	padding-left: 30px;
 header h1 {
+	padding-left: 28px;
 	margin-top: 20px;
 }
 header p {
 	font-size: 1.4em;
-	/*width: 80%;*/
+	padding-left: 30px;
+	width: 80%;
 	line-height: 1.9;
 }
 #logo img {
@@ -442,12 +442,11 @@ header {
 	position: relative; 
 	display: grid;
 	grid-template-columns: 30% auto;
-	grid-template-rows: 20% auto auto;
+	grid-template-rows: 45% auto;
 	/*grid-template-rows: 100px 50px 100px;*/
 	grid-template-areas:
 		"logo h1"
-		"logo p"
-		"nav nav";
+		"logo p";
 	margin-top: 40px;
 }
 #logo a, #logo img {
@@ -485,11 +484,10 @@ header p {
 	overflow: hidden;
 }
 #menu-toggle ul {
-	grid-area: nav;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
-	/*top: 150px;*/
+	top: 150px;
 }
 #menu-toggle a {
 	background-color: var(--white);
