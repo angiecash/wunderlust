@@ -465,6 +465,7 @@ header h1 {
 	grid-row: 1 / 2;
 	*/
 	font-size: 3.125em;
+	margin: 0;
 }
 header p {
 	grid-area: p;
