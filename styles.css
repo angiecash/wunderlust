@@ -444,8 +444,7 @@ header {
 	grid-template-columns: 30% auto;
 	grid-template-rows: 100px 50px 100px;
 	grid-template-areas:
-		"logo ."
-		". h1"
+		"logo h1"
 		". p";
 	margin-top: 40px;
 }
