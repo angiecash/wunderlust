@@ -443,7 +443,7 @@ header {
 	position: relative; 
 	display: grid;
 	grid-template-columns: 30% auto;
-	grid-template-rows: 45% auto;
+	grid-template-rows: 25% auto;
 	/*grid-template-rows: 100px 50px 100px;*/
 	grid-template-areas:
 		"logo h1"
