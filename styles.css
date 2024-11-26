@@ -488,7 +488,7 @@ header p {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
-	top: 150px;
+	top: 175px;
 }
 #menu-toggle a {
 	background-color: var(--white);
