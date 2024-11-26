@@ -442,11 +442,12 @@ header {
 	position: relative; 
 	display: grid;
 	grid-template-columns: 30% auto;
-	grid-template-rows: 45% auto;
+	grid-template-rows: 30% auto auto;
 	/*grid-template-rows: 100px 50px 100px;*/
 	grid-template-areas:
 		"logo h1"
-		"logo p";
+		"logo p"
+		"nav nav";
 	margin-top: 40px;
 }
 #logo a, #logo img {
@@ -484,10 +485,11 @@ header p {
 	overflow: hidden;
 }
 #menu-toggle ul {
+	grid-area: nav;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
-	top: 150px;
+	/*top: 150px;*/
 }
 #menu-toggle a {
 	background-color: var(--white);
